@@ -1,4 +1,4 @@
-// Додавання розмітки форми до body
+
 const formMarkup = `
   <form class="form">
     <label>
@@ -62,7 +62,7 @@ form.addEventListener('submit', event => {
       });
     });
 
-  form.reset(); // очищає форму
+  form.reset(); 
 });
 
 

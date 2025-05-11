@@ -4,10 +4,10 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-// === Додаємо розмітку до body ===
+
 document.body.innerHTML = `
   <div class="picker-container">
-    <input type="text" id="datetime-picker" />
+    <input type="text" id="datetime-picker"/>
     <button type="button" data-start disabled>Start</button>
   </div>
   <div class="timer">
@@ -42,7 +42,7 @@ const refs = {
   seconds: document.querySelector('[data-seconds]'),
 };
 
-// === Налаштування flatpickr ===
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -66,7 +66,7 @@ const options = {
 
 flatpickr(refs.input, options);
 
-// === Запуск таймера ===
+
 refs.startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
@@ -89,7 +89,7 @@ refs.startBtn.addEventListener('click', () => {
   }, 1000);
 });
 
-// === Функція для оновлення значень в інтерфейсі ===
+
 function updateTimerDisplay({ days, hours, minutes, seconds }) {
   refs.days.textContent = addLeadingZero(days);
   refs.hours.textContent = addLeadingZero(hours);
@@ -97,12 +97,12 @@ function updateTimerDisplay({ days, hours, minutes, seconds }) {
   refs.seconds.textContent = addLeadingZero(seconds);
 }
 
-// === Форматування значень ===
+
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
 
-// === Конвертація мс в дні/год/хв/сек ===
+
 function convertMs(ms) {
   const second = 1000;
   const minute = second * 60;

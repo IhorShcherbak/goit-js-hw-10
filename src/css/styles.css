@@ -133,16 +133,16 @@ fieldset legend {
   gap: 8px;
   font-size: 24px;
   line-height: 1;
-  /* ключове — напрямок по горизонталі */
+
   flex-direction: row;
 }
 
 button[type="submit"] {
   width: 100%;
   padding: 4px 10px;
-  /* зменшено висоту */
+
   font-size: 20px;
-  /* можна трохи зменшити розмір шрифту */
+  
   font-weight: 500;
   border: 2px solid #555;
   background-color: #eeeeee;
