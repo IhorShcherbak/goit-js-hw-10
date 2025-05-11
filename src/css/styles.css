@@ -16,3 +16,143 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* ===== Загальні стилі сторінки ===== */
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  justify-content: flex-start;
+
+  height: 100vh;
+}
+
+.picker-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input#datetime-picker {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+button[data-start] {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  gap: 16px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+
+  font-size: 44px;
+
+  font-weight: 300;
+
+}
+
+.label {
+
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 400px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 8px;
+}
+
+input[type="number"] {
+  padding: 10px 12px;
+  font-size: 32px;
+ 
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  border: 3px solid #005bff;
+}
+
+
+fieldset {
+  border: 2px solid #555;
+  padding: 12px 20px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 1;
+  /* ключове — напрямок по горизонталі */
+  flex-direction: row;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 4px 10px;
+  /* зменшено висоту */
+  font-size: 20px;
+  /* можна трохи зменшити розмір шрифту */
+  font-weight: 500;
+  border: 2px solid #555;
+  background-color: #eeeeee;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #dddddd;
+}
+
+
+
