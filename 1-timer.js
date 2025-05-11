@@ -1,6 +1,6 @@
 import"./assets/styles-B4zVjhdP.js";import{f as m,i as f}from"./assets/vendor-BbbuE1sJ.js";document.body.innerHTML=`
   <div class="picker-container">
-    <input type="text" id="datetime-picker" />
+    <input type="text" id="datetime-picker"/>
     <button type="button" data-start disabled>Start</button>
   </div>
   <div class="timer">
