@@ -1,29 +1,5 @@
 
-const formMarkup = `
-  <form class="form">
-    <label>
-      Delay (ms)
-      <input type="number" name="delay" required />
-    </label>
 
-    <fieldset>
-  <legend>State</legend>
-  <div class="radio-group">
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
-    </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </div>
-</fieldset>
-
-    <button type="submit">Create notification</button>
-  </form>
-`;
-document.body.insertAdjacentHTML('beforeend', formMarkup);
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
